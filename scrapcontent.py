@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
+import os
 
 # List of URLs to scrape
 urls = [
@@ -334,6 +335,17 @@ for url in urls:
 
 # Create a DataFrame from the scraped data
 df = pd.DataFrame(data)
+
+# ... (rest of the scraping code remains the same)
+
+# Get the repository path (adjust this if needed)
+repo_path = os.path.join(os.getcwd(), "Webscrap")
+
+# Construct the full path to the Excel file within the repository
+excel_file_path = os.path.join(repo_path, "scraped_data.xlsx")
+
+# Write the DataFrame to the Excel file in the repository
+df.to_excel(excel_file_path, index=False)
 
 # Write the DataFrame to an Excel file
 df.to_excel("scraped_data.xlsx", index=False)
