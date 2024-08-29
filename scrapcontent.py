@@ -342,7 +342,7 @@ df = pd.DataFrame(data)
 repo_path = os.path.join(os.getcwd(), "Webscrap")
 
 # Construct the full path to the Excel file within the repository
-excel_file_path = os.path.join(repo_path, "scraped_data.xlsx")
+excel_file_path = os.path.join(repo_path, "https://github.com/Surajjose2/Webscrap/blob/2a65e8efe1a7e3e8a11f64b89ea7018494771d24/scraped_data.xlsx")
 
 # Write the DataFrame to the Excel file in the repository
 df.to_excel(excel_file_path, index=False)
