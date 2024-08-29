@@ -21,7 +21,7 @@ def get_all_urls(url):
         return []  # Return an empty list in case of errors
 
 # Example usage
-target_website = "https://www.indianyellowpages.com"  # Replace with the website you want to scrape
+target_website = "https://www.indianyellowpages.com/ahmedabad"  # Replace with the website you want to scrape
 all_urls = get_all_urls(target_website)
 
 if all_urls:
